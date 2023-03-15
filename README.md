@@ -3,11 +3,10 @@
 ### Date created
 22/02/2023
 
-### Project Title
-Replace the Project Title
+### Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This code uses Python to understand U.S bikeshare data. The code calculates statistics using and interavtive environment where a user chooses teh data and filter for a dataset to analyze.
 
 ### Files used
 Include the files used
