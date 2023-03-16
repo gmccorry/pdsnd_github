@@ -93,17 +93,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
-
-    # display the most common month
-    # create a new comlumn converting the Start Time column to month name
-    df['month_name'] = df['Start Time'].dt.month_name()
-    # find the most popular month
-    popular_month = df['month_name'].mode()[0]
-    # count for the most popular month
-    popular_month_count = df['month_name'].value_counts()[popular_month]
-    
+       
     print('Most Popular Month:', popular_month)
     print('Count:', popular_month_count,'\n')
     
