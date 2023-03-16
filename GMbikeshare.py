@@ -94,17 +94,7 @@ def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
        
-    print('Most Popular Month:', popular_month)
-    print('Count:', popular_month_count,'\n')
     
-    # display the most common day of week
-    # find the most popular day
-    popular_day = df['day_of_week'].mode()[0]
-    # count for the most popular day
-    popular_day_count = df['day_of_week'].value_counts()[popular_day]
-    
-    print('Most Popular Day:', popular_day)
-    print('Count:', popular_day_count,'\n')
     
     # display the most common start hour   
     # extract hour from the Start Time column to create an hour column
