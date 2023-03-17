@@ -93,39 +93,10 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
-
-    # display the most common month
-    # create a new comlumn converting the Start Time column to month name
-    df['month_name'] = df['Start Time'].dt.month_name()
-    # find the most popular month
-    popular_month = df['month_name'].mode()[0]
-    # count for the most popular month
-    popular_month_count = df['month_name'].value_counts()[popular_month]
+       
     
-    print('Most Popular Month:', popular_month)
-    print('Count:', popular_month_count,'\n')
     
-    # display the most common day of week
-    # find the most popular day
-    popular_day = df['day_of_week'].mode()[0]
-    # count for the most popular day
-    popular_day_count = df['day_of_week'].value_counts()[popular_day]
-    
-    print('Most Popular Day:', popular_day)
-    print('Count:', popular_day_count,'\n')
-    
-    # display the most common start hour   
-    # extract hour from the Start Time column to create an hour column
-    df['hour'] = df['Start Time'].dt.hour    
-    # find the most popular hour
-    popular_hour = df['hour'].mode()[0]
-    # count for the most popular hour
-    popular_hour_count = df['hour'].value_counts()[popular_hour]
-    
-    print('Most Popular Start Hour:', popular_hour)
-    print('Count:', popular_hour_count)
+   
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
